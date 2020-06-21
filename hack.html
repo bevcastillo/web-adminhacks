@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard | Hack</title>
+</head>
+<body>
+    <div>
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="dashboard.html">Home</a></li>
+            <li><a href="category.html">Category</a></li>
+            <li><a href="hack.html">Hacks</a></li>
+            <li><a href="dashboard.html">Logout</a></li>
+        </ul>
+    </div>
+    <div style="text-align: center;">
+        <h2>Add Hacks</h2>
+        <form action="process.php" method="POST">
+            <label for="category">Select a category: </label>
+            <!-- all added categories should be added here -->
+            <select name="category" id="category">
+                <option value="create_new">Create New</option>
+            </select><br><br><br>
+            <!-- end of category list dropdown -->
+            <textarea id="hack_desc" name="hack_desc" placeholder="Write something..." style="height: 100px; width: 300px;"></textarea><br><br><br>
+            <input type="submit" value="Add New Category">
+        </form>
+    </div>
+    <div style="text-align: center; padding-top: 30px;">
+        <h2>All Hacks</h2>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Category</th>
+                <th>Hack Description</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
